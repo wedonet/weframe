@@ -1,0 +1,244 @@
+body {
+    background-color: #efefef;
+}
+
+/*页面左右padding8px*/
+.block{
+	padding:0 8px;
+	margin:0 auto;
+}
+
+/*替你付款的index页*/
+
+.myul{
+	/*border-top: 20px solid #efefef;*/
+	background-color: #FFF;
+}
+.myul li {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	font-size: 1.4rem;
+	background-position:70% 8px;
+	background-size: 70px 32px;
+	cursor:default;
+
+}
+.myul li a {
+	display: block;
+	height: 100%;
+	background-size: 40px auto;
+	padding: 0 8px;
+	color: #595757;
+}
+.texttop {
+	width: 100%;
+	height: 30px;
+	line-height:30px;
+}
+.textbottom {
+	width: 100%;
+	height: 20px;
+	line-height:13px;
+	font-size:1.2rem;
+	color: #999;
+}
+.rightp{
+	width:85px;
+	height:50px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.padding70{
+	padding-bottom:70px;
+	}
+.puttheash_stop{
+	background: url(/_images/stop_01.png) no-repeat;
+	background-color:#efefef;
+	}
+.puttheash_done{
+	background: url(/_images/done_01.png) no-repeat;
+	background-color:#efefef;
+	}
+.overimage1{
+	background: url(/_images/over_01.png) no-repeat;
+	background-color:#efefef;
+	}
+/*member\vfinance\account.php样式*/
+
+.vfinance{
+	width:100%;
+	text-align:center;	
+}
+.vfinance img{
+	height:150px;
+	margin:0 auto;
+}
+.v_num span{
+	text-align:center;
+	display:block;
+	font-size:1.6rem;
+}
+.v_num .v_price{
+	font-size:3.4rem;
+}
+.f_btn{
+	display:block;
+	width: 100%;
+	background-color:#00baff;
+	color:#FFF;
+	height: 45px;
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 45px;
+	margin:20px 0;
+	border-radius:3px;
+}
+.f_btn02{
+	width:40%;
+	background-color:#00baff;
+	color:#FFF;
+	height: 40px;
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 40px;
+	border-radius:3px;
+	margin:10px 0;
+}
+
+/*form */
+.title_top{
+	height:45px;
+	background:#00b9fc;
+	color:#FFF;
+	font-size:1.6rem;
+	line-height:45px;
+	margin-top:10px;
+	padding-left:8px;
+}
+.form{
+	text-align:left;
+	color:#595757;
+}
+.form li{
+	/*border-bottom:10px solid #efefef;*/
+	margin-bottom:15px;
+	background:#FFF;
+}
+
+.f_input{
+	width:96%;
+	height:35px;
+	margin:10px 0;
+	border-radius:3px;
+	background:#f8f8f8;
+	border:1px solid #dddddd;
+}
+.f_input02{
+	width:45%;
+	height:35px;
+	margin:10px 0;
+	border-radius:3px;
+	background:#f8f8f8;
+	border:1px solid #dddddd;
+}
+.form .title{
+	text-align:left;
+	font-size:1.6rem;
+	border:none;
+	background:#f2fbff;
+	border-bottom: 1px solid #d4f3ff;
+	padding:0 8px;
+
+}
+.tiptext{
+	font-size: 1.6rem;
+	color: #999;
+	text-align: center;
+	padding: 20px;
+	}
+.answer{
+	font-size:1.4rem;
+}
+.answer li .f_radio{
+   -webkit-appearance: normal;
+	border: 1px solid #666;
+	margin-right:5px;
+	border-radius:8px;
+}
+
+.form .answer li{
+	line-height:35px;
+	margin-bottom: 0;
+}
+.tip{
+	font-size:1.4rem;
+	text-align: justify;
+	color:#666;
+	line-height:23px;
+	border:1px dashed #00baff;
+	background-color:#fff;
+/*	background-color:#ffd;
+*/	padding:5px;
+	margin:10px 0;
+	
+}
+.tip .t_title{
+	background:url(/_images/tip.png) no-repeat left;
+	padding-left:18px;
+}
+.tip .tipmark{
+	color:#090;
+}
+
+/*弹窗样式*/
+.opentip{
+	color:#333;
+	font-size:1.2rem;
+}
+.opentip .opentip_p{
+	font-size:1.4rem;
+	color:#F60;
+	font-weight:bold;
+}
+/*验证码--来自login.css*/
+
+.mycode {
+    color: #00baff;
+    float: right;
+    font-size: 1.6rem;
+    margin:10px 0;
+    text-align: center;
+    width: 40%;
+}
+/*验证码对错*/
+.rw_p{
+	position:relative;
+}
+#rw{
+	position:absolute;
+	left:51%;
+	top:30%;
+}
+.r{
+	background:url(/_images/right.png) no-repeat center;
+	width:25px;
+	height:25px;
+	position:absolute;
+	left:51%;
+	top:30%;
+}
+.w{
+	background:url(/_images/wrong.png) no-repeat center;
+	width:25px;
+	height:25px;
+	position:absolute;
+	left:51%;
+	top:30%;	
+}
+
+
+

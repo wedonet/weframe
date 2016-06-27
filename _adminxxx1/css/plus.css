@@ -1,0 +1,451 @@
+
+/*Ajax Windown*/
+/*Ajax - Begin*/
+/*background*/
+#bg {
+	width:100%;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:499;
+	FILTER: alpha(opacity=60); /*ie*/
+	-moz-opacity: 0.6; /*ff*/
+	opacity: 0.6; /*css3*/
+}
+/*overflow:scroll;*/
+#edit, #reedit {
+	display:none;
+	position:absolute;
+	border:6px solid #eee;
+	text-align:left;
+	z-index:501;
+	background:#fff;
+}
+#edit .p, #reedit .p {
+	margin:0px 0px 0px 0px;
+	background:#fff;
+	overflow:hidden;
+}
+/*弹出对话框里的每一条*/
+.dialog_list{
+	padding:10px 0 10px 20px;
+}
+.dialog_list li{
+	padding:0 0 10px 0;
+}
+/*半透明*/
+.transparent{
+	background:#000;
+	FILTER: alpha(opacity=80); /*ie*/
+	-moz-opacity: 0.8; /*ff*/
+	opacity: 0.8; /*css3*/
+}
+
+.loading {
+	padding:10px 150px 10px 40px;
+}
+/*overflow:scroll;*/
+#reedit {
+	z-index:600;
+}
+#edit .th, #reedit .th {
+	border-bottom:2px solid #eee;
+	color:#333;
+	margin-bottom:10px;
+	padding-left:10px;
+	font-weight:bold;
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	background:url(../images/dialog_title.png) repeat-x;
+	
+	text-align:center;
+}
+/*
+#edit div, #reedit div {
+	margin-bottom:5px;
+}
+*/
+#edit .info {
+	clear:both;
+	border-top:1px solid #aaa;
+	padding:5px 0 0 5px;
+}
+#close, #reclose {
+	padding:5px;
+	text-align:right;
+	position:absolute;
+	right:5px;
+	top:1px;
+	border:1px solid #aaa;
+	line-height:12px;
+}
+#close:hover, #reclose:hover {
+	display:block;
+	background:#ccc;
+}
+#closeall {
+	border-top:1px solid #aaa;
+	margin-top:20px;
+	text-align:right;
+}
+#closeall a {
+	display:inline-block;
+	position:relative;
+	width:85px;
+	border:1px solid #aaa;
+	margin-top:3px;
+	padding:3px;
+	background:url(../images/dialog_title.png) repeat-x;
+	text-decoration:none;
+	text-align:center;
+}
+/*success and error prompt*/
+.ajaxinfo ul {
+	padding:0 20px 10px 40px;
+}
+.ajaxinfo li {
+	padding:5px 0 5px 10px;
+	background:url(../images/arrow1.gif) no-repeat left 8px;
+}
+.ajaxinfo li.h1 {
+	padding-left:0;
+	font-size:14px;
+	font-weight:bold;
+	color:#cc3333;
+	background:none;
+}
+
+.ajaxinfo li.text {/*说明性文本*/
+	padding:5px 0 5px 0px;
+	background:none;
+}
+.dialogbody1 {
+	margin:10px;
+}
+/*Ajax content - begin*/
+.ac {
+	margin:5px;
+}
+/*Ajax - End*/
+
+
+/* ---------->>> jtip <<<---------------------------------------------------------------*/
+.tipinfo a, .tipinfo a:active, .tipinfo a:visited {
+	margin-left:2px;
+	padding:0px 2px;
+	/*background-color:#c00;*/
+	font-weight:bold;
+	font-size: 12px;
+	color:#FE952E;
+	text-decoration: none;
+	border-bottom:1px Double #f00;
+}
+.tipinfo a:hover {
+	color:#600;
+	text-decoration: none;
+}
+#JT_arrow_left {
+	background-image: url(../images/tip/arrow_left.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	z-index:1001;
+	left:-12px;
+	height:23px;
+	width:10px;
+	top:-3px;
+}
+#JT_arrow_right {
+	background-image: url(../images/tip/arrow_right.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	position: absolute;
+	z-index:1001;
+	height:23px;
+	width:11px;
+	top:-2px;
+}
+#JT {
+	position: absolute;
+	z-index:1000;
+	border: 2px solid #ccc;
+	background-color: #fff;
+}
+#JT_copy {
+	padding:7px;
+	color:#333;
+	text-align:left;
+}
+.JT_loader {
+	background-image: url(../images/tip/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height:12px;
+}
+#JT_close_left {
+	background-color: #ccc;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	font-weight:bold;
+}
+#JT_close_right {
+	background-color: #ccc;
+	text-align: left;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	font-weight:bold;
+}
+#JT_copy p {
+	margin:3px 0;
+}
+#JT_copy img {
+	padding: 1px;
+	border: 1px solid #ccc;
+}
+.j_tip {
+	cursor:help;
+}
+/*j_hover*/
+.j_hover { /*position:relative;
+	z-index:1;
+	display:inline;position:relative;
+	background:url(../images/bg_1.gif) no-repeat right 0;*/
+}
+/* 上下箭头,加一个类避免继承a的属性 */
+.j_hover {
+	padding-right:14px;
+	background:url(../images/bg_1.gif) no-repeat right 0;
+}
+.j_hover.hover {
+	background-position:right -20px;
+}
+.hoverbody, .hoverbody2 {
+	position:absolute;
+	display:block;
+	top:12px;
+	padding:5px 10px 5px 5px;
+	background:#eee;
+	border:1px solid #ddd;
+	z-index:1000;
+	zoom:1;
+}
+.hoverbody {
+	left:0;
+}
+.hoverbody2 {
+	right:0;
+}
+.hoverbody p, .hoverbody2 p {
+	display:block;
+	white-space:nowrap;
+	margin:0 0 0 0;
+	padding:2px 5px;
+	line-height:18px;
+	border-bottom:1px dashed #ccc;
+	text-align:left;
+}
+.hoverbody .dep0, .hoverbody2 .dep0 {
+	font-weight:bold;
+}
+.hoverbody .dep1, .hoverbody2 .dep1 {
+	padding-left:8px;
+}
+
+/*ajax选择分类*/
+.selectclass li {
+	display:inline;
+	float:left;
+	width:150px;
+	height:20px;
+	line-height:18px;
+}
+/*模拟下拉菜单提示*/
+.j_select {
+	background:url(../images/bg_1.gif) no-repeat right 0;
+}
+
+
+/*弹出的上传框样式*/
+.fleft{
+	display:inline;
+	float:left;
+}
+.fright{
+	display:inline;
+	float:right;
+}
+.tabup {
+	padding-left:20px;
+	background:url(../images/tab2.gif) repeat-x bottom;
+	margin-bottom:12px;
+	height:1%;
+}
+.tabup li{
+	display:inline;
+	float:left;
+	width:120px;
+	margin:0px;
+	background:url(../images/tab2.gif) no-repeat 0 0;
+	text-align:center;
+}
+.tabup li a{
+	display:block;
+	margin-left:5px;
+	padding:0 18px 0 13px;
+	height:27px;
+	line-height:27px;
+	background:url(../images/tab2.gif) no-repeat right 0;
+	text-decoration:none;
+}
+.tabup li.on{
+	background-position:0 -27px;
+}
+.tabup li.on a{
+	background-position:right -27px;
+	color:#000;
+}
+
+.confirm {
+	padding:15px 0;
+	border-top:1px solid #ddd;
+}
+
+/*相册,相片列表*/
+.fileclass li{
+	height:20px;
+	line-height:20px;
+}
+.picture li {
+	display:inline;
+	float:left;
+	width:154px;
+	
+	margin:0 5px 4px 0;
+	text-align:center;
+	
+	white-space:nowrap;
+	text-overflow:ellipsis;
+
+	overflow:hidden;
+	text-align:center;
+}
+
+.picture .imgborder{
+	margin:0 auto;
+	width:124px;
+	height:94px;
+	border:1px solid #ddd;
+	overflow:hidden;
+}
+.picture .imgborder td{
+	padding:0;
+	margin:0;
+}
+
+/*tu1 列表*/
+.tu1 { width:100%; }
+.tu1 th {
+	padding:8px 5px;
+	font-weight:bold;
+	background:#f6f6f6;
+	border-bottom:1px solid #b7d8ff;
+	color:#000;
+}
+.tu1 td {
+	padding:8px 5px;
+	vertical-align:top;
+	
+	border-bottom:1px solid #f0f0f0;
+	line-height:18px;
+}
+.tu1 tr.multiline td { line-height:18px; }
+.tu1 td.multiline { line-height:18px; }
+.tu1 tr.alt td { background-color:#fafafa; /*fafafa给所有偶数行加上背景色*/ }
+.tu1 tr.hover td { background-color:#e2e8f4; /*鼠标高亮行的背景色*/ }
+.tu1 p {
+	padding:5px 0 0;
+	color:#bbb;
+}
+.tu1 a { text-decoration:underline; }
+
+
+/*====================================*/
+/*选择操作*/
+.seldo {
+	position:relative;
+}
+.seldo dt {
+	display:inline-block;	
+	padding-right:10px;
+	background:url(../images/menu.gif) no-repeat right center;
+	z-index:9;
+}
+.seldo dt.on{
+	background:url(../images/menu_up.gif) no-repeat right center;
+}
+.seldo dd {
+	display:none;
+	position:absolute;
+	top:16px;
+	left:-36px;
+	padding:5px 7px 5px 5px;
+	border:1px solid #bbb;
+	background:#f5fafe;
+	overflow:hidden;
+	white-space:nowrap;
+	z-index:10;
+
+}
+.seldo li {
+	height:20px;
+	line-height:20px;
+	padding-left:8px;
+	border-bottom:1px dashed #ddd;
+	background:url(../images/arrow2.gif) no-repeat left center;
+	white-space:nowrap;
+	text-align:left;
+	color:#000;
+}
+.seldo li a { text-decoration:none; }
+/*====================================*/
+
+/*消除IE focus bug*/
+.focusbug{
+	position:absolute;
+	top:-500px;
+	left:0;
+}
+
+
+
+/*宽度*/
+.pxsmall{width:300px;}
+.pxmiddle{width:500px;}
+.pxbig { width:750px; }
+
+
+
+
+
+
+#bg2 {
+    width:100%;
+    background:#000;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:510;
+    FILTER: alpha(opacity=60); /*ie*/
+    -moz-opacity: 0.6; /*ff*/
+    opacity: 0.6; /*css3*/
+}
+#showdialog{
+	background:#fff;
+	z-index:520;
+}

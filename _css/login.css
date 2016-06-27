@@ -1,0 +1,90 @@
+/*会员登录注册重置密码找回密码的样式*/
+@charset "utf-8";
+/*login页样式*/
+
+body {
+	background-color: #efefef;
+}
+.btn {
+	border-radius: 3px;
+	font-size:1.8rem;
+	height: 43px;
+	line-height: 43px;
+	display: block;
+	text-align: center;
+	background-color: #00baff;
+	color: #fff;
+	width: 100%;
+}
+.myinput {
+	padding: 0 8px;
+}
+.loginputs {
+	padding: 0px 8px;
+}
+.loginputs ul {
+	border-top: 20px solid #efefef;
+}
+.loginputs li {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	position: relative;
+	font-size: 1.4rem;
+	padding-bottom:14px;
+}
+.inp {
+	border-radius: 3px;
+	font-size: 1.6rem;
+	height: 43px;
+	line-height: 43px;
+	display: block;
+	background-color: #fff;
+	color: #595757;
+	width: 97%;
+	padding-left:2%;
+}
+.w60{
+	width:50%;
+	float:left;
+	}
+.mycode{
+	float:left;
+	width:40%;
+	margin-left:15px;
+	border-radius: 3px;
+	font-size: 1.6rem;
+	height: 45px;
+	line-height: 45px;
+	background-color: #fff;
+	color: #00baff;
+	text-align:center;
+	
+	}
+.mya{
+	padding:10px 8px;
+	font-size:1.4rem;
+	}
+.mya a{
+	display:block;
+	}
+
+.reg{
+	background-color:#72dcb6;
+	width:100%;
+}
+.reg a{
+	background:url(/_images/formreg.png) no-repeat center;
+	background-color:#72dcb6;
+	height:70px;
+	width:320px;
+	margin:0 auto;
+}
+.searchpass{
+	text-align:right;
+	padding-top:10px;
+}
+input{
+	padding:0;
+	margin:0;
+	}

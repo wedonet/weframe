@@ -1,0 +1,290 @@
+body {
+	min-height: 1000px; /*如终有滚动条，防止屏幕跳*/
+}
+.main {
+	width: 1180px;
+	margin: 0 auto;
+	font-size: 12px;
+}
+.top {
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	background-color: #eee;
+	margin-bottom: 10px;
+}
+.bottom {
+	padding: 20px 0 20px;
+	text-align: center;
+}
+.column1 {
+	display: inline;
+	float: left;
+	width: 200px;
+}
+.column2 {
+	display: inline;
+	float: right;
+	width: 960px;
+}
+/*login*/
+.login {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.login input {
+	display: block;
+	height: 35px;
+	width: 100%;
+	margin: 15px 0;
+}
+.login .title {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 20px 0;
+	font-size: 16px;
+}
+/*crumb*/
+.crumb {
+	margin: 2px 0 18px 0;
+	padding: 5px 0 5px 0;
+	border-bottom: 1px dashed #848284;
+	font-weight: bold;
+	color: #c00;
+}
+.crumb ul {
+	display: inline;
+}
+.crumb, .crumb a:link, .crumb a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	color: #c00;
+}
+.crumb a:hover {
+	text-decoration: underline;
+}
+.crumb li {
+	display: inline;
+	margin-left: 10px;
+	padding-left: 16px;
+	background: url(/_images/next.png) no-repeat left center;
+}
+.crumb .prepage a {
+	font-weight: normal;
+}
+/*navagation operate*/
+.navoperate {
+	position: relative;
+	margin: 15px 0;
+	padding: 5px;
+	border: 1px dotted #848284;
+	text-align: right;
+}
+.navoperate h1 {
+	margin: 0 0 8px 0;
+	padding: 0 0 0 20px;
+	border-bottom: 0;
+	background: url(../images/operate.gif) no-repeat 0px 2px;
+	font-size: 12px;
+}
+.navoperate li {
+	display: inline;
+	margin: 0 5px 0 0;
+	padding: 0;
+	font-size: 14px;
+}
+.navoperate li a {
+	color: blue;
+	text-decoration: none;
+}
+/*tu1 列表*/
+.table1 {
+	width: 100%;
+}
+.table1 th {
+	padding: 8px 5px;
+	font-weight: bold;
+	background: #f6f6f6;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #b7d8ff;
+	color: #000;
+	text-align: left;
+}
+.table1 td {
+	padding: 8px 5px;
+	vertical-align: top;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 18px;
+}
+.table1 tr.multiline td {
+	line-height: 18px;
+}
+.table1 td.multiline {
+	line-height: 18px;
+}
+.table1 tr.alt td {
+	background-color: #fafafa; /*fafafa给所有偶数行加上背景色*/
+}
+.table1 tr.hover td {
+	background-color: #e2e8f4; /*鼠标高亮行的背景色*/
+}
+.table1 p {
+	padding: 5px 0 0;
+	color: #bbb;
+}
+.table1 a {
+	text-decoration: underline;
+}
+.table1 .label {
+	font-weight: bold;
+}
+/*tableform
+*表单table
+*/
+.tableform {
+	width: 100%;
+}
+.tableform td {
+	padding: 8px 5px;
+	vertical-align: top;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #f0f0f0;
+	line-height: 18px;
+}
+/*left menu*/
+.sidebar h4 {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0 0 0;
+}
+/*page*/
+.page {
+	clear: both;
+	height: 20px;
+	padding: 15px 0 5px 0;
+	text-align: center;
+}
+.page ul {
+	margin: 0 auto;
+}
+.page .current {
+	color: red;
+}
+.page li {
+	display: inline;
+}
+.page .count {
+	float: left;
+}
+.page a {
+	text-decoration: none;
+}
+.page a:hover {
+	text-decoration: underline;
+}
+/*star*/
+.star {
+	color: #ff0000;
+	font-family: none;
+}
+/*选项卡*/
+.tab1 {
+	zoom: 1;
+	border-bottom: 1px solid #ddd;
+}
+.tab1 li {
+	float: left;
+	font-weight: bold;
+	display: inline;
+}
+.tab1 li a {
+	position: relative;
+	display: block;
+	padding: 5px 15px;
+	text-decoration: none;
+	margin: 0 0 -1px 4px;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+.tab1 .on {
+	color: #428eff;
+	border-bottom-color: #fafafa;
+	background-color: #fafafa;
+	outline: 0;
+}
+/*左边菜单-----用menu_left了*/
+/*.sidebar li {
+	height: 28px;
+	line-height: 28px;
+}
+.sidebar li a {
+	display: block;
+}
+.sidebar li a.on {
+	background: #eee;
+}*/
+/*tip1*/
+.tip1 {
+	margin: 25px 0;
+	padding: 7px 5px 5px 30px;
+	background: url(../images/tip.gif) no-repeat 10px 5px #fffee2;
+	border: 1px solid #FFCB80;
+}
+.tip1 dt {
+	font-weight: bold;
+}
+.tip1 dd {
+	padding: 4px 0;
+}
+/*end tip1*/
+
+/*添加必填标志**/
+.star {
+	width: 10px;
+	display: inline-block;
+	color: #FF0000;
+}
+.omit {
+	max-width: 70px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-break:keep-all;
+	overflow: hidden;
+	cursor:pointer;
+}
+/*缩略图*/
+.pre{
+	border:1px solid #999;
+	width:200px;
+	height:148px;
+}
+
+/*listfilter*/
+.listfilter{
+	height:24px;
+	line-height:24px;
+	margin:10px 0;
+	padding:5px;
+	border:1px solid #b7d8ff;
+}
+
+/*errlist*/
+.errlist{
+	color:red;
+}
+
+/*导出a的样式*/
+.btnexport{
+	display: inline-block;
+	height: 20px; 
+	line-height: 20px;
+	width: 52px;
+	text-align: center;
+	border-radius:3px;
+	background-color: #f6f6f6;
+	border:1px solid #b7d8ff;
+	text-decoration:none;
+}

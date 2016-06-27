@@ -1,0 +1,302 @@
+/*个人中心的样式 */
+@charset "utf-8";
+/*个人中心的index页的样式*/
+body {
+	background-color: #efefef;
+}
+.myinfor {
+	width: 100%;
+	height: 60px;
+	border-top: 20px solid #efefef;
+	background-color: #fff;
+}
+.myul {
+	padding-bottom: 60px;
+}
+.myul ul {
+	padding: 0px 8px;
+	border-top: 20px solid #efefef;
+	background-color: #FFF;
+}
+.myul li {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	font-size: 1.4rem;
+}
+.myul li a {
+	display: block;
+	height: 100%;
+	background-size: 40px auto;
+	padding-left: 45px;
+	color: #595757;
+}
+.myorder {
+	background: url(../_images/myorder.png) no-repeat left;
+}
+.mymoney {
+	background: url(../_images/mymoney.png) no-repeat left;
+}
+.youpay {
+	background: url(../_images/youpay.png) no-repeat left;
+}
+.safety {
+	background: url(../_images/safety.png) no-repeat left;
+}
+.more1 {
+	display: block;
+	width: 15px;
+	height: 100%;
+	position: absolute;
+	right: 5px;
+	top: 0;
+	background: url(../_images/arrow2.png) no-repeat center;
+	background-size: 15px 28px;
+	z-index: 4;
+}
+.infortxt {
+	float: left;
+	height: 60px;
+}
+.headimg {
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+}
+.myinfor span {
+	display: block;
+	float: left;
+}
+.myname {
+	height: 34px;
+	line-height: 44px;
+	font-size: 1.6rem;
+	color: #000;
+	max-width: 260px;
+	white-space: nowrap;
+	word-break: keep-all;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.myid {
+	width: 260px;
+	height: 26px;
+	font-size: 1.0rem;
+	color: #595757;
+}
+.noboder {
+	border: none!important;
+}
+/*uinfor页的样式代码*/
+.myinfors ul {
+	margin: 20px 0;
+	background-color: #FFF;
+}
+.myinfors li {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	font-size: 1.4rem;
+	padding: 0px 8px;
+}
+.btn {
+	border-radius: 3px;
+	font-size: 1.8rem;
+	height: 43px;
+	line-height: 43px;
+	display: block;
+	text-align: center;
+	background-color: #00baff;
+	color: #fff;
+	width: 100%;
+}
+.myinput {
+	padding: 0 8px;
+}
+.input1 {
+	min-width: 260px;
+	height: 50px;
+	line-height: 50px;
+	float: right;
+	text-align: right;
+}
+select, input[type="date"], input[type="text"] {
+	appearance: none;
+	-webkit-appearance: none; /*去除系统默认的样式*/
+	-moz-appearance: none;
+	tap-highlight-color: rgba(0, 0, 0, 0);   /* 点击高亮的颜色*/
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);   /* 点击高亮的颜色*/
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);   /* 点击高亮的颜色*/
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand {
+display: none;
+}
+input[type="text"] {
+	padding: 0;
+	margin: 0;
+}
+.myinfors li div {
+	padding: 0 8px;
+}
+.myinfors li .input0 {
+	float: right;
+	width: 200px;
+	height: 48px;
+	color: #999;
+	text-align: right;
+}
+/*order订单页的样式*/
+.orders ul {
+	margin-top: 20px;
+	background-color: #fff;
+}
+.orders li {
+	height: 56px;
+	border-bottom: 1px solid #ddd;
+	font-size: 1.4rem;
+	padding: 0px 8px;
+	position: relative;
+}
+.ordertop {
+	height: 36px!important;
+	line-height: 36px!important;
+}
+.top5 {
+	margin-top: 5px;
+	margin-right: 8px;
+}
+.name01 {
+	display: block;
+  height: 38px;
+  line-height: 18px;
+  padding-top: 11px;
+  float: left;
+  width: 58%;
+}
+.money01 {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 8px;
+}
+.orderbottom {
+	text-align: right;
+	line-height: 34px;
+}
+.orderbottom span {
+	font-size: 1.8rem;
+}
+.orderbottom div {
+	color: #595757;
+	line-height: 7px!important;
+}
+/*我的财务的样式代码*/
+.typeaccount {
+	margin-top: 20px;
+	height: 60px;
+	background-color: #FFF;
+}
+.typeaccount span {
+	display: block;
+	float: left;
+	width: 33.33%;
+	height: 60px;
+}
+.comeaccount {
+	background: url(../_images/account01.png) no-repeat center left;
+	background-size: 45px;
+	color: #00baff;
+}
+.outaccount {
+	background: url(../_images/account02.png) no-repeat center left;
+	background-size: 45px;
+	color: #dd2727;
+}
+.mymoney1 {
+	background: url(../_images/account03.png) no-repeat center left;
+	background-size: 45px;
+	color: #595757;
+}
+.accountul span {
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4rem;
+	color: #999;
+}
+.myspan01 {
+	width: 42%;
+	text-align: left;
+	padding-left: 3%;
+	line-height: 24px!important;
+}
+ @media only screen and (min-width: 333px) {
+.myspan01 {
+	line-height: 50px!important;
+}
+}
+.myspan02 {
+	width: 25%;
+	text-align: center;
+}
+.myspan03 {
+	width: 27%;
+	text-align: right;
+	padding-right: 3%;
+}
+.colorfont span {
+	color: #595757!important;
+}
+.typeaccount div {
+	min-width: 47px;
+	height: 40px;
+	padding: 10px 0px 10px 40px;
+	font-size: 1.4rem;
+	line-height: 20px;
+}
+.colorfont .linehight1 {
+	line-height: 50px!important;
+}
+/*重置密码页的样式代码*/
+.loginputs {
+	padding: 0px 8px;
+}
+.loginputs ul {
+	border-top: 20px solid #efefef;
+}
+.loginputs li {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	position: relative;
+	font-size: 1.4rem;
+	padding-bottom: 14px;
+}
+.inp {
+	border-radius: 3px;
+	font-size: 1.8rem;
+	height: 43px;
+	line-height: 43px;
+	display: block;
+	background-color: #fff;
+	color: #595757;
+	width: 98%;
+	padding-left: 2%;
+}
+/*个人中心页添加退出功能*/
+.exit {
+	width: 100%;
+	background-color: #fff;
+	height: 45px;
+	text-align: center;
+	font-size: 1.6rem;
+	line-height: 45px;
+	color: #595757;
+}

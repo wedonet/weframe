@@ -1,0 +1,87 @@
+html{
+	font-size:12px;
+}
+/*page*/
+.page {
+	clear: both;
+	height: 20px;
+	padding: 15px 0 5px 0;
+	text-align: center;
+}
+.page ul {
+	margin: 0 auto;
+}
+.page .current {
+	color: red;
+}
+.page li {
+	display: inline;
+}
+.page .count {
+	float: left;
+}
+.page a {
+	text-decoration: none;
+}
+.page a:hover {
+	text-decoration: underline;
+}
+/*star*/
+.star {
+	color: #ff0000;
+	font-family: none;
+}
+/*选项卡*/
+.tab1 {
+	zoom: 1;
+	border-bottom: 1px solid #ddd;
+}
+.tab1 li {
+	float: left;
+	font-weight: bold;
+	display: inline;
+}
+.tab1 li a {
+	position: relative;
+	display: block;
+	padding: 5px 15px;
+	text-decoration: none;
+	margin: 0 0 -1px 4px;
+	background: #eee;
+	border: 1px solid #ddd;
+}
+.tab1 .on {
+	color: #428eff;
+	border-bottom-color: #fafafa;
+	background-color: #fafafa;
+	outline: 0;
+}
+
+
+/*上传分类*/
+.fileclass li{
+	margin:0 0 5px 0;
+	height:24px;
+	line-height:24px;
+
+}
+.fileclass a{
+	display:block;
+}
+.fileclass a.on{
+	background:#eee;
+}
+
+#upload .th{
+	border-bottom:2px solid #eee;
+	color:#333;
+	margin-bottom:10px;
+	padding-left:10px;
+	font-weight:bold;
+	font-size:12px;
+	height:25px;
+	line-height:25px;
+	background:url(../images/dialog_title.png) repeat-x;
+	
+	text-align:center;
+}
